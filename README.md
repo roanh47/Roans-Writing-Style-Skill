@@ -1,6 +1,6 @@
 # Roan's Writing Style Skill
 
-A Hermes Agent skill that makes AI output sound like an actual human wrote it. Specifically: like I wrote it.
+An AI skill that makes AI output sound like an actual human wrote it. Specifically: like I wrote it.
 
 ## The problem
 
@@ -35,12 +35,10 @@ The AI selects the correct section based on the language you ask for.
 
 ## How to use
 
-### Hermes Agent
-
 Place `SKILL.md` in your skills directory:
 
 ```
-~/.hermes/skills/productivity/roans-writing-style/SKILL.md
+~/kills/roans-writing-style/SKILL.md
 ```
 
 Or clone this repo and add it as an external skill directory in `config.yaml`:
@@ -48,12 +46,8 @@ Or clone this repo and add it as an external skill directory in `config.yaml`:
 ```yaml
 skills:
   external_dirs:
-    - /path/to/roans-writing-style-skill
+    - /path/to/roans-writing-style-skill.md
 ```
-
-### Other systems
-
-The file is standard Markdown with YAML frontmatter. Any system that supports knowledge files, system prompts, or custom instructions can use it. Just paste the relevant section into your prompt or upload it as a knowledge file.
 
 ## Known issues
 
@@ -64,7 +58,3 @@ The file is standard Markdown with YAML frontmatter. Any system that supports kn
 ## Origin
 
 This skill was built by analyzing actual emails, messages, and documents I wrote. The AI extracted the rules, I reviewed them, and we iterated until the output matched my real voice.
-
-## License
-
-Personal. Do whatever you want with this.
