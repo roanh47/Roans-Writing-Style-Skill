@@ -2,7 +2,7 @@
 name: roans-writing-style
 description: "Roan Heemstra's personal writing style guide. How to write emails, messages, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
 version: 2.0.0
-author: Roan (migrated from OpenClaw workspace)
+author: Roan
 license: personal
 metadata:
   hermes:
@@ -19,7 +19,7 @@ Defines exactly how Roan wants text written on his behalf.
 
 When Roan asks you to write:
 - **English** - Use the **English** section below
-- **Nederlands** - Use the **Nederlands** section below
+- **Dutch** - Use the **Nederlands** section below
 
 ---
 
@@ -64,7 +64,7 @@ Use this section when Roan asks you to write in English.
 
 ### Opening
 - `Hi [Name],` or `Hello [Name],` - never "Dear"
-- First contact: no filler like "I hope this finds you well"
+- First contact: "I hope you're doing well"
 - Follow-ups: reference previous message naturally
 
 ### Body
@@ -96,7 +96,6 @@ Use this section when Roan asks you to write in English.
 "This report is about..."
 "We will look at..."
 "Important aspects of..."
-"I hope this email finds you well" (first contact only)
 ```
 
 ### Vague Words (always replace with concrete impact)
@@ -118,10 +117,9 @@ Use: `This means...` - `This causes...` - `This leads to...`
 - Focus on clarity and outcome
 
 ## What Roan Does NOT Do
-- No "Dear [Name]"
+- No "Dear"
 - No filler openings unless intentional
-- No emoji in external emails
-- No corporate phrases
+- No emoji in emails
 - No unnecessary politeness
 - No generic or reusable sentences
 
@@ -174,7 +172,7 @@ Gebruik deze sectie wanneer Roan je vraagt om in het Nederlands te schrijven.
 ## Structuur
 
 ### Opening
-- `Hi [Naam],` of `Hallo [Naam],` - nooit "Geachte"
+- `Hi [Naam],` of `Hallo [Naam],` of  `Dag [Naam],`- nooit "Geachte"
 - Eerste contact: geen opvulling als "Ik hoop dat deze e-mail u goed bereikt"
 - Opvolgingen: verwijs natuurlijk naar het vorige bericht
 
@@ -189,7 +187,7 @@ Gebruik deze sectie wanneer Roan je vraagt om in het Nederlands te schrijven.
 - `Met dank,`
 - `Alvast bedankt,`
 - `Groet,`
-- `Met vriendelijke groet,` (alleen formeel)
+- `Met vriendelijke groet,`
 - Dan `Roan` of `Roan Heemstra`
 - Geen handtekeningen, titels, of extra's
 
