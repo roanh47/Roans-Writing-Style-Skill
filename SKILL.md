@@ -28,12 +28,12 @@ When Roan asks you to write:
 
 ## Critical Rules
 
-**NO EM DASHES. EVER.**
+**NO EM DASHES. EVER.** This includes the - regular hyphen `-`, dont use it.
 Use:
-- regular hyphen `-`
 - comma `,`
 - period `.`
 - or split into separate sentences
+instead
 
 This applies to:
 - emails
@@ -72,24 +72,6 @@ When generating text:
 - Keep technical names exact
 - Avoid overexplaining obvious concepts
 - Avoid academic filler language
-
-## Agent Boundary - User-Owned Documents
-
-**Roan edits his own personal documents. The agent does NOT.**
-
-- If Roan says:
-  - "Ik ga het document bewerken en niet jij"
-  - or similar wording
-
-  Stop automated editing immediately.
-
-- The agent may create new reference files as supplements.
-- The agent must never overwrite or rename Roan's original files without explicit instruction.
-
-When in doubt:
-Ask before modifying anything in:
-
-`~/.hermes/skills/productivity/roans-writing-style/references/`
 
 ---
 
