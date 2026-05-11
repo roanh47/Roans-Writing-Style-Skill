@@ -1,18 +1,19 @@
 ---
 name: roans-writing-style
-description: "Roan Heemstra's personal writing style guide. How to write emails, messages, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
-version: 2.0.0
+description: "Roan Heemstra's personal writing style guide. How to write emails, messages, reports, documentation, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
+version: 3.0.0
 author: Roan
 license: personal
 metadata:
   hermes:
-    tags: [writing, style, voice, roan, professional, copywriting, en, nl]
+    tags: [writing, style, voice, roan, professional, copywriting, en, nl, documentation, reports]
     trigger: "Any task asking to write, draft, rewrite, or format outward-facing text for Roan"
 ---
 
 # Roan's Writing Style
 
 Ported from `~/.openclaw/workspace/ROANS-HANDWRITING.md`.
+
 Defines exactly how Roan wants text written on his behalf.
 
 ## Language Selection
@@ -23,36 +24,72 @@ When Roan asks you to write:
 
 ---
 
-## Critical Rules (All Languages)
+# Global Rules (All Languages)
 
-**NO EM DASHES (---). EVER.**
-Use a regular hyphen `-`, comma `,`, or split into two sentences.
-This applies to ALL messages, including internal ones to Roan.
+## Critical Rules
+
+**NO EM DASHES. EVER.**
+Use:
+- regular hyphen `-`
+- comma `,`
+- period `.`
+- or split into separate sentences
+
+This applies to:
+- emails
+- reports
+- messages
+- documentation
+- internal notes
+- generated examples
 
 ## Core Voice
 
-- **Direct, not cold** - says what needs saying without filler
-- **Polite but not servile** - respectful, no overdoing it
-- **Brief paragraphs** - typically 1-3 sentences
-- **Explains context when it matters** - shows why something matters
-- **Concrete over abstract** - avoids vague or generic phrasing
+- Direct, not cold
+- Professional without sounding corporate
+- Concrete over abstract
+- Calm and structured
+- Explains context when needed
+- Avoids filler and generic phrasing
+- Practical instead of theoretical
 
 ## Rewrite Pattern (Enforced)
 
 When generating text:
 1. Identify the actual situation or problem
-2. State it directly without explaining the topic first
+2. State it directly
 3. Add concrete cause and effect
-4. Remove any sentence that could fit any report
-5. Replace vague words with specific impact
+4. Remove generic or reusable sentences
+5. Replace vague wording with real impact
+6. Prefer operational context over theory
+
+## Universal Writing Rules
+
+- Every sentence must add information
+- Avoid repeating the same point differently
+- Use realistic examples instead of generic explanation
+- Prefer real systems, actions, and outcomes
+- Keep technical names exact
+- Avoid overexplaining obvious concepts
+- Avoid academic filler language
 
 ## Agent Boundary - User-Owned Documents
 
 **Roan edits his own personal documents. The agent does NOT.**
 
-- If Roan says "Ik ga het document bewerken en niet jij" ("I will edit the document, not you"), respect this immediately. Stop any automated editing of his personal reference files.
-- The agent may create **new** reference files as derived supplements, but must never overwrite or rename Roan's original files without explicit instruction.
-- When in doubt: ask before modifying anything in `~/.hermes/skills/productivity/roans-writing-style/references/`.
+- If Roan says:
+  - "Ik ga het document bewerken en niet jij"
+  - or similar wording
+
+  Stop automated editing immediately.
+
+- The agent may create new reference files as supplements.
+- The agent must never overwrite or rename Roan's original files without explicit instruction.
+
+When in doubt:
+Ask before modifying anything in:
+
+`~/.hermes/skills/productivity/roans-writing-style/references/`
 
 ---
 
@@ -60,108 +97,240 @@ When generating text:
 
 Use this section when Roan asks you to write in English.
 
-## Structure
+---
 
-### Opening
-- `Hi [Name],` or `Hello [Name],` - never "Dear"
-- First contact: "I hope you're doing well"
-- Follow-ups: reference previous message naturally
+## Communication Style (Emails, Messages, Tickets)
 
-### Body
+Use this style for:
+- Emails
+- Support messages
+- Tickets
+- Follow-ups
+- Professional communication
+- Short updates
+- Requests
+
+### Structure
+
+#### Opening
+Use:
+- `Hi [Name],`
+- `Hello [Name],`
+
+Never:
+- `Dear`
+
+First contact:
+- "I hope you're doing well"
+
+Follow-ups:
+- reference previous communication naturally
+
+#### Body
+
 - Start with the point immediately
 - Explain what is needed and why
 - Include technical details exactly as-is
-- If blocking or urgent: state it clearly
-- Each paragraph has a clear purpose: what is the issue, why it matters, what needs to happen
+- If urgent or blocking: state it clearly
+- Each paragraph must have a clear purpose
 
-### Sign-off
+#### Sign-off
+
+Use:
 - `Thank you,`
 - `Sincerely,`
-- `Best,` (only if very informal)
-- Then `Roan` or `Roan Heemstra`
-- No signatures, titles, or extras
+- `Best,` (only if informal)
 
-## Writing Style (Strict Rules)
+Then:
+- `Roan`
+- or `Roan Heemstra`
 
-- Remove all generic sentences
+No:
+- signatures
+- titles
+- extra formatting
+
+---
+
+## Communication Writing Style (Strict Rules)
+
+- Remove generic sentences
 - Replace vague wording with concrete impact
-- Ensure each sentence adds new information
 - Keep sentences short and direct
-- Start with context or problem, not theory
-- Never write sentences that could apply to any situation
+- Start with context or problem
+- Never write reusable corporate-style sentences
 
 ### Forbidden Phrases
-```
+
+```text
 "In this assignment..."
 "This report is about..."
 "We will look at..."
 "Important aspects of..."
 ```
 
-### Vague Words (always replace with concrete impact)
-`important` - `effective` - `efficient` - `clear` - `good` - `bad`
+### Vague Words (replace with concrete impact)
+
+```text
+important
+effective
+efficient
+clear
+good
+bad
+```
 
 ### Force Cause and Effect
-Use: `This means...` - `This causes...` - `This leads to...`
 
-### Language Rules
-- Short sentences
-- No filler words
-- No theory unless needed
-- No generic conclusions
+Use:
+- `This means...`
+- `This causes...`
+- `This leads to...`
 
-## Tone
-- Sounds like explaining to a colleague
+### Tone
+
+- Sounds like explaining something to a colleague
 - No academic tone
-- No "nice sounding" filler sentences
-- Focus on clarity and outcome
+- No fake professionalism
+- No filler
 
-## What Roan Does NOT Do
+### What Roan Does NOT Do
+
 - No "Dear"
-- No filler openings unless intentional
-- No emoji in emails
 - No unnecessary politeness
+- No emoji in professional emails
+- No corporate wording
 - No generic or reusable sentences
 
-## Real Examples (English)
+---
 
-### Following up on a case/ticket:
-> Hi Swathi,
->
-> Thank you for the update. I appreciate you keeping me in the loop while you coordinate with the internal team.
-> I'll look forward to hearing from you as soon as there's more information.
->
-> Sincerely,
-> Roan
+## Long-form Texts (Reports, Documentation, Reflection)
 
-### Asking for something:
-> Hello Swathi,
->
-> May I request an update on the status of my case? I'm unfortunately still unable to access my tenant.
-> I rely on my Microsoft tenant for identity management in Entra ID, and would like to continue using it in the near future.
->
-> Thank you,
-> Roan
+Use this style for:
+- Reports
+- Internship reports
+- School assignments
+- Technical documentation
+- Project descriptions
+- Reflections
+- Evaluations
+- Explanatory text
+- Internal documentation
 
-### Providing technical info (no preamble):
-> Hello Microsoft Support,
->
-> What extra details do you require?
-> I would like additional assistance to get this case resolved.
->
-> Thank you.
->
-> Sincerely,
-> Roan
+This section overrides the shorter communication-focused writing rules when generating long-form content.
 
-### Short direct message:
-> Hi [Name],
->
-> The server is down. I need access restored by 14:00 to meet the client deadline.
-> Can you confirm when this will be resolved?
->
-> Thank you,
-> Roan
+### Core Style
+
+- Calm and structured
+- Professional but readable
+- Technical where needed
+- Explains context before detail when useful
+- Avoids academic filler language
+- Avoids sounding corporate
+- Focuses on practical actions and outcomes
+
+### Structure
+
+#### Introductions
+
+Use this order:
+1. Situation or context
+2. Why it matters
+3. What was done
+
+Do not start with:
+- "In this report..."
+- "This chapter describes..."
+- "The purpose of this assignment..."
+
+Start with real context instead.
+
+#### Technical Sections
+
+Describe:
+1. Goal
+2. Actions taken
+3. Problems or decisions
+4. Result or outcome
+
+Always explain:
+- why a decision was made
+- what impact it had
+- what changed because of it
+
+#### Reflection Sections
+
+Use concrete reflection.
+
+Explain:
+- what went well
+- what was difficult
+- what changed during the process
+- what was learned from real situations
+
+Avoid generic reflection.
+
+Bad:
+> I learned a lot during this internship.
+
+Good:
+> During the Universal Print migration I noticed that small printer changes affected multiple departments. This taught me to communicate changes earlier and test configurations with users before rollout.
+
+### Paragraph Style
+
+- Short to medium paragraphs
+- Usually 3-8 sentences
+- One topic per paragraph
+- Smooth transitions between sections
+- Lists only when useful
+
+### Technical Writing Style
+
+- Keep technical product names exact
+- Explain systems practically
+- Mention operational impact
+- Mention user impact where relevant
+- Mention cost, maintenance, scalability, usability, or security when relevant
+
+### Tone
+
+- Professional without sounding academic
+- Confident without exaggeration
+- Practical instead of theoretical
+- Clear and readable
+- Sounds like explaining real workplace experience
+
+### Forbidden Style
+
+Avoid:
+- Generic filler
+- Repeated explanations
+- Academic padding
+- Overexplaining obvious concepts
+- Empty conclusions
+- Corporate wording
+
+### Preferred Examples
+
+Bad:
+> The purpose of this project was to improve efficiency.
+
+Good:
+> We replaced Samsung MagicInfo with YoDeck because the previous platform created unnecessary licensing costs and was difficult to manage across multiple screens.
+
+Bad:
+> During this internship I improved my communication skills.
+
+Good:
+> At the start of my internship I often continued troubleshooting too long on my own. Later I learned to involve colleagues earlier, which reduced troubleshooting time and prevented unnecessary downtime.
+
+### Long-form Priority Override
+
+For long-form content:
+- clarity is more important than extreme brevity
+- context is allowed when it improves understanding
+- slightly longer explanations are acceptable
+- natural reading flow has priority over aggressive shortening
 
 ---
 
@@ -169,108 +338,240 @@ Use: `This means...` - `This causes...` - `This leads to...`
 
 Gebruik deze sectie wanneer Roan je vraagt om in het Nederlands te schrijven.
 
-## Structuur
+---
 
-### Opening
-- `Hi [Naam],` of `Hallo [Naam],` of  `Dag [Naam],`- nooit "Geachte"
-- Eerste contact: geen opvulling als "Ik hoop dat deze e-mail u goed bereikt"
-- Opvolgingen: verwijs natuurlijk naar het vorige bericht
+## Communicatiestijl (Mails, Berichten, Tickets)
 
-### Body
+Gebruik deze stijl voor:
+- E-mails
+- Supportberichten
+- Tickets
+- Opvolgingen
+- Professionele communicatie
+- Korte updates
+- Verzoeken
+
+### Structuur
+
+#### Opening
+
+Gebruik:
+- `Hi [Naam],`
+- `Hallo [Naam],`
+- `Dag [Naam],`
+
+Nooit:
+- `Geachte`
+
+Eerste contact:
+- geen opvullende openingszin
+
+Opvolgingen:
+- verwijs natuurlijk naar eerdere communicatie
+
+#### Body
+
 - Begin direct met het punt
-- Leg uit wat er nodig is en waarom
-- Neem technische details exact over zoals ze zijn
-- Als het blokkerend of urgent is: zeg dat duidelijk
-- Elke alinea heeft een duidelijk doel: wat is het probleem, waarom doet het ertoe, wat moet er gebeuren
+- Leg uit wat nodig is en waarom
+- Neem technische details exact over
+- Als iets blokkerend of urgent is: benoem dit direct
+- Elke alinea moet een duidelijk doel hebben
 
-### Afsluiting
+#### Afsluiting
+
+Gebruik:
 - `Met dank,`
 - `Alvast bedankt,`
 - `Groet,`
 - `Met vriendelijke groet,`
-- Dan `Roan` of `Roan Heemstra`
-- Geen handtekeningen, titels, of extra's
 
-## Schrijfstijl (Strenge Regels)
+Daarna:
+- `Roan`
+- of `Roan Heemstra`
 
-- Verwijder alle generieke zinnen
+Geen:
+- handtekeningen
+- functietitels
+- extra opmaak
+
+---
+
+## Communicatie Schrijfstijl (Strenge Regels)
+
+- Verwijder generieke zinnen
 - Vervang vage formulering door concrete impact
-- Zorg dat elke zin nieuwe informatie toevoegt
 - Houd zinnen kort en direct
-- Begin met context of probleem, niet met theorie
-- Schrijf nooit zinnen die in elke situatie zouden passen
+- Begin met context of probleem
+- Vermijd herbruikbare corporate-zinnen
 
 ### Verboden Zinnen
-```
+
+```text
 "In deze opdracht..."
 "Dit verslag gaat over..."
 "Er wordt gekeken naar..."
 "Belangrijke aspecten van..."
-"Ik hoop dat deze e-mail u goed bereikt" (alleen eerste contact)
 ```
 
-### Vage Woorden (altijd vervangen door concrete impact)
-`belangrijk` - `effectief` - `efficient` - `duidelijk` - `goed` - `slecht`
+### Vage Woorden (vervangen)
+
+```text
+belangrijk
+effectief
+efficient
+duidelijk
+goed
+slecht
+```
 
 ### Dwing Oorzaak en Gevolg Af
-Gebruik: `Hierdoor...` - `Dit zorgt ervoor dat...` - `Dit leidt tot...`
 
-### Taalregels
-- Korte zinnen
-- Geen opvulwoorden
-- Geen theorie tenzij nodig
-- Geen generieke conclusies
+Gebruik:
+- `Hierdoor...`
+- `Dit zorgt ervoor dat...`
+- `Dit leidt tot...`
 
-## Toon
+### Toon
+
 - Klinkt als uitleg aan een collega
 - Geen academische toon
-- Geen "lekker klinkende" opvulzinnen
-- Focus op duidelijkheid en resultaat
+- Geen nep-professionele taal
+- Geen opvulzinnen
 
-## Wat Roan NIET Doet
-- Geen "Geachte [Naam]"
-- Geen opvullende openingszinnen tenzij expres
-- Geen emoji in externe mails
-- Geen corporate taal
+### Wat Roan NIET Doet
+
+- Geen "Geachte"
 - Geen onnodige beleefdheid
+- Geen emoji in professionele mails
+- Geen corporate taal
 - Geen generieke of herbruikbare zinnen
 
-## Echte Voorbeelden (Nederlands)
+---
 
-### Opvolging van een case/ticket:
-> Hallo Swathi,
->
-> Dank voor de update. Ik waardeer dat je me op de hoogte houdt terwijl je dit intern coordineert.
-> Ik hoor graag van je zodra er meer informatie is.
->
-> Met dank,
-> Roan
+## Lange Teksten (Verslagen, Documentatie, Reflectie)
 
-### Iets vragen:
-> Hallo Swathi,
->
-> Kan ik een update krijgen over de status van mijn case? Ik kan mijn tenant helaas nog steeds niet benaderen.
-> Ik vertrouw op mijn Microsoft tenant voor identity management in Entra ID, en wil deze graag zo snel mogelijk weer gebruiken.
->
-> Met dank,
-> Roan
+Gebruik deze stijl voor:
+- Verslagen
+- Stageverslagen
+- Schoolopdrachten
+- Technische documentatie
+- Projectbeschrijvingen
+- Reflecties
+- Evaluaties
+- Uitleggende teksten
+- Interne documentatie
 
-### Technische info geven (zonder inleiding):
-> Hallo Microsoft Support,
->
-> Welke extra gegevens hebben jullie nodig?
-> Ik wil graag verdere hulp om dit case opgelost te krijgen.
->
-> Met dank.
->
-> Met vriendelijke groet,
-> Roan
+Deze sectie overschrijft de kortere communicatiestijl bij lange teksten.
 
-### Kort direct bericht:
-> Hallo [Naam],
->
-> De server ligt eruit. Ik heb toegang nodig voor 14:00 om de client-deadline te halen.
-> Kun je bevestigen wanneer dit opgelost is?
->
-> Met dank,
-> Roan
+### Kernstijl
+
+- Rustig en gestructureerd
+- Professioneel maar leesbaar
+- Technisch waar nodig
+- Legt context uit vóór details wanneer nuttig
+- Vermijdt academische opvultaai
+- Vermijdt corporate taal
+- Focus op praktische acties en resultaten
+
+### Structuur
+
+#### Introducties
+
+Gebruik deze volgorde:
+1. Situatie of context
+2. Waarom dit relevant is
+3. Wat er gedaan is
+
+Begin niet met:
+- "In dit verslag..."
+- "Dit hoofdstuk beschrijft..."
+- "Het doel van deze opdracht..."
+
+Begin met echte context.
+
+#### Technische Secties
+
+Beschrijf:
+1. Doel
+2. Uitgevoerde acties
+3. Problemen of keuzes
+4. Resultaat of uitkomst
+
+Leg altijd uit:
+- waarom een keuze gemaakt werd
+- welke impact dit had
+- wat hierdoor veranderde
+
+#### Reflecties
+
+Gebruik concrete reflectie.
+
+Beschrijf:
+- wat goed ging
+- wat lastig was
+- wat veranderde tijdens het proces
+- wat geleerd werd uit echte situaties
+
+Vermijd generieke reflectie.
+
+Slecht:
+> Ik heb veel geleerd tijdens deze stage.
+
+Goed:
+> Tijdens de migratie naar Universal Print merkte ik dat kleine printerwijzigingen meerdere afdelingen konden beïnvloeden. Hierdoor leerde ik veranderingen eerder te communiceren en configuraties eerst met gebruikers te testen.
+
+### Alineastijl
+
+- Korte tot middelgrote alinea's
+- Meestal 3-8 zinnen
+- Eén onderwerp per alinea
+- Logische overgangen tussen onderwerpen
+- Lijstjes alleen gebruiken wanneer nuttig
+
+### Technische Schrijfstijl
+
+- Houd productnamen exact
+- Leg systemen praktisch uit
+- Benoem operationele impact
+- Benoem gebruikersimpact waar relevant
+- Benoem kosten, onderhoud, schaalbaarheid, gebruiksvriendelijkheid of beveiliging wanneer relevant
+
+### Toon
+
+- Professioneel zonder academisch te klinken
+- Zelfverzekerd zonder overdrijving
+- Praktisch in plaats van theoretisch
+- Duidelijk en leesbaar
+- Klinkt als echte praktijkervaring
+
+### Verboden Stijl
+
+Vermijd:
+- Generieke opvulling
+- Herhaalde uitleg
+- Academische opvultaai
+- Overuitleg van logische concepten
+- Lege conclusies
+- Corporate taal
+
+### Gewenste Voorbeelden
+
+Slecht:
+> Het doel van dit project was om de efficiëntie te verbeteren.
+
+Goed:
+> We hebben Samsung MagicInfo vervangen door YoDeck omdat het vorige platform onnodige licentiekosten veroorzaakte en lastig schaalbaar was.
+
+Slecht:
+> Tijdens deze stage heb ik mijn communicatieve vaardigheden verbeterd.
+
+Goed:
+> Aan het begin van mijn stage bleef ik vaak te lang zelfstandig troubleshooten. Later leerde ik collega's eerder te betrekken, waardoor problemen sneller opgelost werden en downtime afnam.
+
+### Long-form Priority Override
+
+Bij lange teksten:
+- is duidelijkheid belangrijker dan extreme beknoptheid
+- mag context gebruikt worden als dit begrip verbetert
+- zijn iets langere uitleggen acceptabel
+- heeft natuurlijke leesflow prioriteit boven agressief inkorten
