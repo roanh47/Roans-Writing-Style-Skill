@@ -38,7 +38,7 @@ The AI selects the correct section based on the language you ask for.
 Place `SKILL.md` in your skills directory:
 
 ```
-~/kills/roans-writing-style/SKILL.md
+~/skills/roans-writing-style/SKILL.md
 ```
 
 Or clone this repo and add it as an external skill directory in `config.yaml`:
