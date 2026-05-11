@@ -406,30 +406,26 @@ Geen:
 
 ### Verboden Zinnen
 
-```text
 "In deze opdracht..."
 "Dit verslag gaat over..."
 "Er wordt gekeken naar..."
 "Belangrijke aspecten van..."
-```
 
 ### Vage Woorden (vervangen)
 
-```text
 belangrijk
 effectief
 efficient
 duidelijk
 goed
 slecht
-```
 
 ### Dwing Oorzaak en Gevolg Af
 
 Gebruik:
-- `Hierdoor...`
-- `Dit zorgt ervoor dat...`
-- `Dit leidt tot...`
+- Hierdoor...
+- Dit zorgt ervoor dat...
+- Dit leidt tot...
 
 ### Toon
 
@@ -440,7 +436,7 @@ Gebruik:
 
 ### Wat Roan NIET Doet
 
-- Geen "Geachte"
+- Geen Geachte
 - Geen onnodige beleefdheid
 - Geen emoji in professionele mails
 - Geen corporate taal
@@ -477,101 +473,92 @@ Deze sectie overschrijft de kortere communicatiestijl bij lange teksten.
 
 #### Introducties
 
-Gebruik deze volgorde:
+Gebruik:
 1. Situatie of context
 2. Waarom dit relevant is
 3. Wat er gedaan is
 
-Begin niet met:
-- "In dit verslag..."
-- "Dit hoofdstuk beschrijft..."
-- "Het doel van deze opdracht..."
-
-Begin met echte context.
+Niet:
+- In dit verslag...
+- Dit hoofdstuk beschrijft...
+- Het doel van deze opdracht...
 
 #### Technische Secties
 
-Beschrijf:
 1. Doel
 2. Uitgevoerde acties
 3. Problemen of keuzes
 4. Resultaat of uitkomst
 
-Leg altijd uit:
-- waarom een keuze gemaakt werd
-- welke impact dit had
-- wat hierdoor veranderde
+Altijd:
+- waarom keuze gemaakt werd
+- impact
+- verandering
 
 #### Reflecties
 
-Gebruik concrete reflectie.
-
-Beschrijf:
 - wat goed ging
 - wat lastig was
-- wat veranderde tijdens het proces
-- wat geleerd werd uit echte situaties
+- wat veranderde
+- wat geleerd werd
 
-Vermijd generieke reflectie.
+Geen:
+- Ik heb veel geleerd
 
-Slecht:
-> Ik heb veel geleerd tijdens deze stage.
-
-Goed:
-> Tijdens de migratie naar Universal Print merkte ik dat kleine printerwijzigingen meerdere afdelingen konden beïnvloeden. Hierdoor leerde ik veranderingen eerder te communiceren en configuraties eerst met gebruikers te testen.
+Wel:
+- Tijdens de migratie naar Universal Print merkte ik dat kleine printerwijzigingen meerdere afdelingen beïnvloeden. Hierdoor leerde ik eerder te communiceren en eerst te testen.
 
 ### Alineastijl
 
 - Korte tot middelgrote alinea's
-- Meestal 3-8 zinnen
-- Eén onderwerp per alinea
-- Logische overgangen tussen onderwerpen
-- Lijstjes alleen gebruiken wanneer nuttig
+- 3 tot 8 zinnen
+- 1 onderwerp per alinea
+- Logische overgangen
+- Lijstjes alleen wanneer nuttig
 
 ### Technische Schrijfstijl
 
-- Houd productnamen exact
-- Leg systemen praktisch uit
-- Benoem operationele impact
-- Benoem gebruikersimpact waar relevant
-- Benoem kosten, onderhoud, schaalbaarheid, gebruiksvriendelijkheid of beveiliging wanneer relevant
+- Productnamen exact
+- Praktische uitleg
+- Operationele impact
+- Gebruikersimpact
+- Kosten, onderhoud, schaalbaarheid, gebruik, beveiliging waar relevant
 
 ### Toon
 
-- Professioneel zonder academisch te klinken
+- Professioneel zonder academisch te worden
 - Zelfverzekerd zonder overdrijving
-- Praktisch in plaats van theoretisch
-- Duidelijk en leesbaar
-- Klinkt als echte praktijkervaring
+- Praktisch
+- Duidelijk
+- Echt werkverslag gevoel
 
 ### Verboden Stijl
 
-Vermijd:
 - Generieke opvulling
-- Herhaalde uitleg
-- Academische opvultaai
-- Overuitleg van logische concepten
+- Herhaling
+- Academische taal
+- Overuitleg
 - Lege conclusies
 - Corporate taal
 
-### Gewenste Voorbeelden
+### Voorbeelden
 
 Slecht:
-> Het doel van dit project was om de efficiëntie te verbeteren.
+Het doel was efficiëntie verbeteren
 
 Goed:
-> We hebben Samsung MagicInfo vervangen door YoDeck omdat het vorige platform onnodige licentiekosten veroorzaakte en lastig schaalbaar was.
+We hebben Samsung MagicInfo vervangen door YoDeck omdat licentiekosten onnodig hoog waren en beheer lastig schaalbaar was
 
 Slecht:
-> Tijdens deze stage heb ik mijn communicatieve vaardigheden verbeterd.
+Ik heb communicatieve vaardigheden verbeterd
 
 Goed:
-> Aan het begin van mijn stage bleef ik vaak te lang zelfstandig troubleshooten. Later leerde ik collega's eerder te betrekken, waardoor problemen sneller opgelost werden en downtime afnam.
+Aan het begin bleef ik vaak te lang zelfstandig zoeken naar oplossingen. Later betrok ik collega’s eerder, waardoor problemen sneller opgelost werden
 
 ### Long-form Priority Override
 
 Bij lange teksten:
-- is duidelijkheid belangrijker dan extreme beknoptheid
-- mag context gebruikt worden als dit begrip verbetert
-- zijn iets langere uitleggen acceptabel
-- heeft natuurlijke leesflow prioriteit boven agressief inkorten
+- duidelijkheid boven extreme beknoptheid
+- context toegestaan
+- langere uitleg toegestaan
+- leesflow belangrijker dan inkorten
