@@ -18,9 +18,11 @@ Defines exactly how Roan wants text written on his behalf.
 
 ## Language Selection
 
-When Roan asks you to write:
-- **English** - Use the **English** section below
-- **Dutch** - Use the **Nederlands** section below
+When Roan asks you to write or starts a conversation:
+- If he writes in **English** → Use the **English** section below
+- If he writes in **Dutch** → Use the **Nederlands** section below
+- **Mirror his language** — if he starts the conversation in Dutch, answer in Dutch. No need to ask or wait for explicit "spreek Nederlands".
+- If he switches languages mid-conversation, follow his switch for subsequent replies.
 
 ---
 
@@ -535,7 +537,7 @@ Slecht:
 Ik heb communicatieve vaardigheden verbeterd
 
 Goed:
-Aan het begin bleef ik vaak te lang zelfstandig zoeken naar oplossingen. Later betrok ik collega’s eerder, waardoor problemen sneller opgelost werden
+Aan het begin bleef ik vaak te lang zelfstandig zoeken naar oplossingen. Later betrok ik collega's eerder, waardoor problemen sneller opgelost werden
 
 ### Long-form Priority Override
 
