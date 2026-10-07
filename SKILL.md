@@ -1,7 +1,7 @@
 ---
 name: roans-writing-style
 description: "Roan Heemstra's personal writing style guide. How to write emails, messages, reports, documentation, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
-version: 3.1.0
+version: 3.2.0
 author: Roan
 license: personal
 metadata:
@@ -598,7 +598,11 @@ Wat blijft staan: de vaste koppen en de verplichte begrippen van de opleiding (S
 
 ### Zo schrijft Roan in zijn eigen schoolwerk (bewijs)
 
-Getrokken uit de 55 bestanden van de OneDrive-schoolmap 2026-2027, per bestand geanalyseerd. Citaten en volledige onderbouwing: `references/eigen-werk-bewijs.md`. Eisen per documenttype: `references/hanze-inlever-en-stijleisen.md`.
+Getrokken uit de hele OneDrive-schoolmap, 2019-2022 tot en met 2026-2027, per bestand geanalyseerd. De per-bestand-analyses staan in `~/school-analyse-v2/` (2.011 schoolbestanden over 22 analyses) en `~/school-analyse/` (2026-2027), met de dekking in `99-dekking.md`.
+
+Bijbehorende referenties: `references/schrijfbewijs-alle-jaren.md` (stem per periode, citaten met bestandsnaam, wat per register verschilt), `references/terugkerende-fouten.md` (alle fouten per categorie met getelde frequenties), `references/eigen-werk-bewijs.md` (2026-2027), `references/hanze-inlever-en-stijleisen.md` (eisen per documenttype).
+
+Bij het verzamelen van nieuw bewijs: haal de tekst uit de ruwe Office-XML in plaats van met een gewone docx-lezer, want tekst in tekstvakken en shapes komt daar niet uit, en OCR de bestanden zonder tekstlaag. Een bestand dat als leeg doorgaat is meestal niet leeg. Volledige werkwijze: skill `document-corpus-harvest`.
 
 De vorm van zijn antwoorden, in deze volgorde:
 
@@ -626,6 +630,18 @@ Fouten die hij zelf maakt en die je bij het nakijken wegstreept (volledige lijst
 - Engelse werkwoorden half vervoegd: "we hebben de statische routes configured", modussen, privilaged mode.
 
 Wat hij niet doet in een verslag: bulletlijsten als antwoord, theorie-alinea's, openende zinnen als "In dit verslag", en em dash.
+
+Wat over alle jaren gelijk blijft (bewijs uit 2022-2023 tot en met 2026-2027):
+
+- Ik-vorm in individueel werk, wij-vorm in groepsverslagen, soms wisselend binnen een document.
+- Bewering eerst, de reden erachter met omdat, aangezien, want of doordat.
+- Engels vakjargon en productnamen blijven onvertaald tussen het Nederlands staan.
+- "Helaas" als vaste aanloopzin zodra iets niet lukt.
+- Vaste stopwoorden: even, gewoon, dus, super, eigenlijk, natuurlijk, best wel.
+- Hardop redeneren in stappen, met een korte afsluiter als "Het werkt".
+- Logboeken en reflectieformulieren in losse notities en telegramstijl, zakelijke rapporten neutraler in de derde persoon of wij.
+
+Geteld over zijn eigen werk: geinstalleerd 144, even 135, vind voor vindt 72, word voor wordt 45, helaas 34, geüpdatet 25. Volledige telling per patroon in `references/terugkerende-fouten.md` en `~/school-analyse-v2/98-telpatronen.md`.
 
 Bij lange teksten:
 - duidelijkheid boven extreme beknoptheid

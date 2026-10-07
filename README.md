@@ -20,7 +20,7 @@ That is exactly what this repo contains.
 - Enforces concrete language over vague filler
 - Blocks generic phrases like "In this assignment..." or "Important aspects of..."
 - Forces cause-and-effect sentences instead of empty descriptions
-- Removes em-dashes entirely (use hyphens or commas instead)
+- Removes em-dashes entirely (use a colon, a comma, or two sentences instead)
 - Keeps paragraphs short, usually 1 to 3 sentences
 - Uses the correct sign-off format per language
 
