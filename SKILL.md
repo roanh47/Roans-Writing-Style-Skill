@@ -1,7 +1,7 @@
 ---
 name: roans-writing-style
 description: "Roan Heemstra's personal writing style guide. How to write emails, messages, reports, documentation, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
-version: 3.0.0
+version: 3.1.0
 author: Roan
 license: personal
 metadata:
@@ -576,14 +576,99 @@ Aan het begin bleef ik vaak te lang zelfstandig zoeken naar oplossingen. Later b
 
 Bij labjournals en opdrachten met genummerde vragen: per vraag maximaal 2 tot 3 zinnen, met de commando's in een eigen blok erboven of eronder. Eén oorzaak en één gevolg is genoeg. Zodra een antwoord uitgroeit tot een alinea met theorie, haalt Roan het eruit.
 
-Schrijf in ik-vorm, want hij levert het verslag in: "ik zet de router uit", niet "je zet de router uit" en niet "jouw Packet Tracer versie". Zinnen die klinken als een instructie aan een lezer vallen meteen op.
+Kijk eerst of het een groepsverslag of een individueel verslag is en houd die keuze het hele document vast.
+- Groepsverslag (Roan, Thijs, Merijn, de PE-opdrachten): wij-vorm, "wij zetten de router uit". Gebruik overal wij of we als onderwerp, niet ik.
+- Individueel verslag (PE4, PE6): ik-vorm, "ik zet de router uit".
+
+In beide gevallen nooit de lezer aanspreken: niet "je zet de router uit" en niet "jouw Packet Tracer versie". Zinnen die klinken als een instructie aan een lezer vallen meteen op.
 
 Vraagt de opdracht om uitleg van een begrip, dan leg je dat begrip zelf uit in 2 tot 4 zinnen voordat je de commando's geeft. Alleen zeggen wat hij intypt is geen antwoord op een uitlegvraag.
 
-### Long-form Priority Override
+### Stem van Roan in verslagen (checklist)
+
+Loop elke alinea langs deze vijf punten voor je hem inlevert:
+
+1. Zinnen van 8 tot 15 woorden, met af en toe een korte ertussen.
+2. Onderwerp en werkwoord vooraan, actief. "Het netwerk groeit niet mee", niet "de groei wordt geremd door de infrastructuur".
+3. Concreet: aantal, locatie, apparaat, tijdstip. "ongeveer dertig medewerkers in Drachten", niet "een groeiende organisatie".
+4. Geen nominalisaties. "het realiseren van het netwerk" wordt "het netwerk bouwen", "het uitvoeren van de test" wordt "de test".
+5. Geen schoolboekwoorden: telt, beschikt over, vormt, betreft, dient, middels, structureel, aantoonbaar, in wording, gerealiseerd, wordt verantwoordelijk gehouden.
+
+Wat blijft staan: de vaste koppen en de verplichte begrippen van de opleiding (SMART, eisen, wensen, operationalisering, kwaliteitscriteria). Die woorden komen van de docent, niet van Roan, dus die mogen genoemd worden, maar de zin eromheen is gewoon Nederlands.
+
+### Zo schrijft Roan in zijn eigen schoolwerk (bewijs)
+
+Getrokken uit de 55 bestanden van de OneDrive-schoolmap 2026-2027, per bestand geanalyseerd. Citaten en volledige onderbouwing: `references/eigen-werk-bewijs.md`. Eisen per documenttype: `references/hanze-inlever-en-stijleisen.md`.
+
+De vorm van zijn antwoorden, in deze volgorde:
+
+1. Kop letterlijk uit het opdrachtdocument, geen eigen koppen. Inkorten tot steekwoorden mag ("3. Controlleren", "a. GOLA instellen").
+2. Apparaatlabel, dan het commandoblok, dan het show-commando.
+3. Screenshot met een kort label, en de tekst verwijst ernaar: "hierboven zie je dat wij de message of the day (MotD) hebben gemaakt!"
+4. Een tot drie regels uitleg, met de reden erachter: "Dit is de applicatie laag (7), aangezien laag 6 wordt gebruikt voor dingen zoals data syntax en vertalingen".
+
+Zijn stem in die uitleg:
+
+- Bewering eerst, reden erachter met aangezien, omdat, want of doordat.
+- Jargon meteen uitleggen tussen komma's: "de AVG, de active virtual gateway", "de wildcard, het omgekeerde subnetmasker".
+- Verklaren vanuit wat hij zelf doet: "Zo zie ik meteen of de kabel tussen twee routers aan de juiste interface zit voordat ik ga routeren."
+- Oorzaak en gevolg bij een foute config: "Door de kost van de link te verhogen wordt dat pad duurder dan het directe pad dus zet de router de default route alleen nog via de andere router in de tabel."
+- Rekenwerk in genummerde tussenstappen, met een ter-info-regel: "Ter info: deze 78 bytes komt niet uit de lucht vallen."
+- Spreektaal die van hem is: als het goed is, niks, helemaal geen, gewiped, lostrekken, oid, gewoon normaal. Hij is zelfverzekerd en licht eigenwijs, niet formeel.
+
+Fouten die hij zelf maakt en die je bij het nakijken wegstreept (volledige lijst in de reference):
+
+- dt-fouten: bied, onthoud, laad, houd, word.
+- uitdrukkingen: doormiddel, zorgt er voor, successvol, in het internet.
+- samenstellingen en apostrofs: applicatie laag, IP adres, uit gezet, commandos.
+- cijfers waar een woord hoort in lopende tekst: "1 virtueel MAC-adres".
+- kleine letter na een punt, spatie voor een leesteken, dubbele spaties, ontbrekende punten.
+- Engelse werkwoorden half vervoegd: "we hebben de statische routes configured", modussen, privilaged mode.
+
+Wat hij niet doet in een verslag: bulletlijsten als antwoord, theorie-alinea's, openende zinnen als "In dit verslag", en em dash.
 
 Bij lange teksten:
 - duidelijkheid boven extreme beknoptheid
 - context toegestaan
 - langere uitleg toegestaan
 - leesflow belangrijker dan inkorten
+
+---
+
+## Minder AI-achtig (EN en NL)
+
+AI-tekst valt op aan drie dingen: voorspelbare woorden, gelijke zinslengte en vaste structuren. Bronnen: Wikipedia Signs of AI writing, Kobak et al. in Science Advances 2025 (14 miljoen PubMed-abstracts), tropes.fyi, Nederland Digitaal over de Nederlandse variant. Volledige lijsten staan in `references/ai-tells.md`.
+
+### Woorden die niet in de tekst horen
+
+Engels: delve, crucial, pivotal, intricate, meticulous, underscore (als werkwoord), showcase, robust, leverage, streamline, harness, tapestry, testament, realm, vibrant, enduring, foster, boast (voor heeft), landscape als abstract woord, align with, it's worth noting, notably, importantly, additionally aan het begin van een zin.
+
+Nederlands, want AI vertaalt die woorden letterlijk: cruciaal, essentieel, robuust, naadloos, toekomstbestendig, holistisch, in kaart brengen, relevante stakeholders, veelzijdig, waardevol, onderstrepen in figuurlijke zin, een cruciale rol spelen, het is belangrijk om te benadrukken, in het huidige digitale tijdperk, beschikt over, middels, telt voor heeft.
+
+Vervangen door het gewone werkwoord: telt wordt heeft, beschikt over wordt heeft, speelt een cruciale rol wordt is nodig voor of noem direct de handeling.
+
+### Patronen die opvallen
+
+- Negatieve parallel: niet alleen X maar ook Y, het is niet X het is Y. Schrijf beide delen los.
+- Drieslag op herhaling: drie bijvoeglijke naamwoorden of drie zinnen met dezelfde vorm achter elkaar. Een enkele drieslag is prima.
+- Alle zinnen ongeveer even lang, of elke zin met dezelfde opening.
+- Dezelfde zaak steeds met een ander synoniem.
+- In conclusie, al met al, samenvattend als aankondiging.
+- Streepje of em dash als leesteken.
+- Aankondigen hoeveel punten er komen: twee dingen vallen op, drie oorzaken.
+- Vage bron: experts zeggen, uit onderzoek blijkt, zonder naam.
+- Marketingtaal: krachtige oplossing, naadloze integratie.
+- Grote woorden waar een gewone beschrijving past.
+- Ing-staartjes die niets toevoegen: wat bijdraagt aan een beter resultaat.
+- Concreetheid ontbreekt: geen naam, geen aantal, geen apparaat, geen tijdstip.
+
+### Werkwijze
+
+1. Schrijf de inhoud eerst, haal daarna de woorden uit de lijst eruit.
+2. Vervang een abstracte zin door een concreet feit.
+3. Knip een kwalificatie per alinea weg.
+4. Lees de alinea hardop: klinkt het als een bericht van Roan of als een schoolboek.
+5. Zet na twee lange zinnen een korte zin.
+6. Varieer binnen zijn gewone taal. Een natuurlijke Nederlandse drieslag mag blijven staan. Maak er geen stijve constructie van met een aanwijzend voornaamwoord vooraan ("Deze remt de groei", "Die zorgt ervoor dat"). Dat klinkt als een schoolboek en dan is de variatie erger dan het patroon.
+
+Detectors zijn onbetrouwbaar, menselijke herkenning zit rond kansniveau. Het doel is niet een detector passeren, maar dat de tekst als Roan leest.
