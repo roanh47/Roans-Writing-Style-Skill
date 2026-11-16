@@ -1,0 +1,56 @@
+name: Tag the version in SKILL.md
+
+# Every version in SKILL.md gets a tag and a release, so the repo history and
+# the number in the file never drift apart. A push to main reads the version,
+# and only acts when the tag for it does not exist yet.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read the version from SKILL.md
+        id: version
+        run: |
+          set -euo pipefail
+          VERSION="$(grep -m1 '^version:' SKILL.md | sed 's/^version:[[:space:]]*//' | tr -d '"' | tr -d "'" | xargs)"
+          test -n "$VERSION" || { echo "::error::no version in SKILL.md"; exit 1; }
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "SKILL.md says $VERSION"
+
+      - name: Create the tag and the release when they are missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          TAG="v$VERSION"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "$TAG already exists, nothing to do"
+            exit 0
+          fi
+
+          PREVIOUS="$(git describe --tags --abbrev=0 2>/dev/null || true)"
+          if [ -n "$PREVIOUS" ]; then
+            RANGE="$PREVIOUS..HEAD"
+          else
+            RANGE="HEAD"
+          fi
+
+          BODY="$(git log --no-merges --pretty='- %s' "$RANGE" | head -n 40)"
+          test -n "$BODY" || BODY="- Geen wijzigingen sinds $PREVIOUS"
+
+          git tag -a "$TAG" -m "$TAG"
+          git push origin "$TAG"
+          gh release create "$TAG" --title "$TAG" --notes "$BODY"
