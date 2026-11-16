@@ -1,7 +1,7 @@
 ---
 name: roans-writing-style
 description: "Roan Heemstra's personal writing style guide. How to write emails, messages, reports, documentation, and professional text in Roan's voice. Combined EN/NL reference for single-file use."
-version: 3.2.0
+version: 3.5.0
 author: Roan
 license: personal
 metadata:
@@ -33,6 +33,7 @@ When Roan asks you to write or starts a conversation:
 When the text is delivered to Roan through Telegram, Slack, Teams or any other chat platform, put the whole piece in a code block. He copy pastes it straight into the mail, ticket or message.
 
 - Plain text inside the block: no bold, no headings, no bullet formatting, no markdown styling
+- A command he has to run: one block whose FIRST token is the command itself (`curl ...`, `ssh ...`). No `export` prelude, no `VAR=` lines in front. Inline what can be inlined (`$(base64 < /pad/img.png | tr -d '\n')`), so he pastes and hits enter.
 - One block per message, only the lines that go into the mail
 - Your own explanation stays outside the block, two lines maximum
 - This applies to every language and every text type, mail, chatbericht, verslag
@@ -53,6 +54,8 @@ This applies to:
 - documentation
 - internal notes
 - generated examples
+
+One exception, from his own CV: a hyphen inside a date range or an address block is fine (`Sept 2022 - Heden`, `099-1234`). The rule is about a hyphen used as punctuation in a sentence.
 
 ## Core Voice
 
@@ -84,6 +87,16 @@ When generating text:
 - Avoid overexplaining obvious concepts
 - Avoid academic filler language
 
+## Fixed Word Choice (EN and NL)
+
+These override any synonym a model would pick on its own.
+
+- Never `zowel ... als ...`. Write `... en ook ...` instead: "de router en ook de switch".
+- Never `&`. Write `en`.
+- Never the Dutch word `dadelijk`. Use `straks`, `zo meteen` or name the time.
+- IT terms stay English, also inside Dutch sentences: apparaat wordt device, subnetmasker wordt subnet of subnet mask.
+- English compounds are two words, no hyphen: domain name, subnet mask, host name, file name, end point, stand alone. Never domain-name or subnet-mask.
+
 ---
 
 # English
@@ -106,18 +119,13 @@ Use this style for:
 ### Structure
 
 #### Opening
-Use:
-- `Hi [Name],`
-- `Hello [Name],`
 
-Never:
-- `Dear`
-
-First contact:
-- "I hope you're doing well"
+- Support thread or an ongoing ticket: `Hi [Name],` or `Hello [Company] Support,`
+- Cold mail to a person or a company in English: `Dear [Name],` is correct and he uses it. The ban on `Geachte` is a Dutch rule, it does not forbid `Dear`.
 
 Follow-ups:
 - reference previous communication naturally
+- no "I hope you're doing well" opener, he never writes one
 
 #### Body
 
@@ -189,9 +197,9 @@ Use:
 
 ### What Roan Does NOT Do
 
-- No "Dear"
+- No `Geachte` in Dutch
 - No unnecessary politeness
-- No emoji in professional emails
+- No emoji he did not use himself. He has put one in an English support thread, so it is not a hard ban, but never add one on your own.
 - No corporate wording
 - No generic or reusable sentences
 
@@ -337,7 +345,7 @@ Gebruik deze sectie wanneer Roan je vraagt om in het Nederlands te schrijven.
 
 ### Kanaal en lengte (eerst bepalen)
 
-Bepaal het kanaal voordat je schrijft. Een chatbericht op Teams, WhatsApp of Slack is maximaal 4 tot 6 zinnen: geen kopjes, geen bulletlijsten, geen lange aanloop, geen uitgebreide afsluiting. Lever zulke berichten als één blok dat direct te plakken is en zet je eigen uitleg erbuiten, in twee regels. Dat geldt ook bij juridische of technische inhoud: kies de sterkste verwijzing, laat de rest weg, korter gaat voor vollediger. Mail en lange teksten mogen wel langer.
+Bepaal het kanaal voordat je schrijft. Een chatbericht op Teams, WhatsApp of Slack is 2 tot 4 zinnen: geen kopjes, geen bulletlijsten, geen lange aanloop, geen mailopbouw met een aparte afsluiting en ondertekening. Lever zulke berichten als één blok dat direct te plakken is en zet je eigen uitleg erbuiten, in twee regels. Dat geldt ook bij juridische of technische inhoud: kies de sterkste verwijzing, laat de rest weg, korter gaat voor vollediger. Schrijf je een bericht van vijf zinnen of meer, dan is het kanaal waarschijnlijk mail en geen chat. Mail en lange teksten mogen wel langer.
 
 Gebruik deze stijl voor:
 - E-mails
@@ -391,6 +399,10 @@ Geen:
 - functietitels
 - extra opmaak
 
+### Feiten die je niet hebt
+
+Laat een ontbrekend feit als `[einddatum]` in het blok staan in plaats van het te verzinnen, en noem de open plekken in je twee regels buiten het blok. Gok nooit een datum, een bedrag, een aantal uren of een naam. Een mail met een verzonnen einddatum liegt en valt bij de ontvanger op.
+
 ---
 
 ## Communicatie Schrijfstijl (Strenge Regels)
@@ -434,8 +446,23 @@ optioneel → als je wil
 noodzakelijk → nodig
 vergen → vragen
 tezamen → samen
+dadelijk → straks, zo meteen
+
+Zowel ... als ... en het teken & gebruik je nooit. Dat wordt en ook: "de router en ook de switch".
 
 Als een zin klinkt als een schoolboek, is hij fout.
+
+### IT-termen blijven Engels
+
+Vaktaal en apparaatnamen vertaal je niet naar het Nederlands, ook niet midden in een zin.
+
+- apparaat → device
+- subnetmasker → subnet, subnet mask
+- hostnaam → host name
+- domeinnaam → domain name
+- bestandsnaam → file name
+
+Engelse samenstellingen schrijf je los, zonder koppelstreepje: domain name, subnet mask, host name, file name, end point, stand alone. Nooit domain-name of subnet-mask.
 
 ### Dwing Oorzaak en Gevolg Af
 
@@ -455,7 +482,7 @@ Gebruik:
 
 - Geen Geachte
 - Geen onnodige beleefdheid
-- Geen emoji in professionele mails
+- Geen emoji in Nederlandstalige zakelijke mail; in een Engelse supportthread is er één keer een voorgekomen, voeg er zelf nooit een toe
 - Geen corporate taal
 - Geen generieke of herbruikbare zinnen
 
@@ -574,6 +601,8 @@ Aan het begin bleef ik vaak te lang zelfstandig zoeken naar oplossingen. Later b
 
 ### Antwoorden per opdrachtvraag
 
+Op een Notion-pagina die hij zelf gebruikt: nooit de hele pagina opnieuw pushen, alleen het blok dat moet veranderen. Zijn eigen screenshots en opmerkingen in de pagina raak je anders kwijt. Werkwijze staat in de skill `notion` (`scripts/patch_block.py`).
+
 Bij labjournals en opdrachten met genummerde vragen: per vraag maximaal 2 tot 3 zinnen, met de commando's in een eigen blok erboven of eronder. Eén oorzaak en één gevolg is genoeg. Zodra een antwoord uitgroeit tot een alinea met theorie, haalt Roan het eruit.
 
 Kijk eerst of het een groepsverslag of een individueel verslag is en houd die keuze het hele document vast.
@@ -643,11 +672,55 @@ Wat over alle jaren gelijk blijft (bewijs uit 2022-2023 tot en met 2026-2027):
 
 Geteld over zijn eigen werk: geinstalleerd 144, even 135, vind voor vindt 72, word voor wordt 45, helaas 34, geüpdatet 25. Volledige telling per patroon in `references/terugkerende-fouten.md` en `~/school-analyse-v2/98-telpatronen.md`.
 
+### Register of stem: wat je oplevert en wat je belooft
+
+De regels in deze skill leveren het juiste register, niet automatisch zijn stem. Zijn stem zit in de volgorde van zijn zinnen en in wat hij durft te zeggen, niet in woordkeuze.
+
+Zijn stem zit hierin:
+
+- Bewering, dan de reden, dan het gevolg. Dat patroon is het meest herkenbare aan hem.
+- Uitleggen vanuit wat hij zelf doet: "Zo zie ik meteen of de kabel tussen twee routers aan de juiste interface zit."
+- Vakjargon meteen uitleggen tussen komma's: "de AVG, de active virtual gateway".
+- Spreektaal die van hem is: even, gewoon, dus, eigenlijk, super, als het goed is, niks, helemaal geen.
+- "Helaas" als vaste aanloopzin zodra iets niet lukt.
+- Toegeven wat hij niet weet, zonder eromheen te draaien: "Ik heb alleen geen idee hoe."
+- Een droge grap of een losse afsluiter: "pun intended", "SO naar Mylan", "Het werkt".
+
+In een neutrale sectie, zoals een inleiding, voorwoord of samenvatting van een rapport, kan het meeste hiervan niet. Schrijf die sectie neutraal en in de derde persoon, dat is het register dat de opleiding vraagt.
+
+- Zeg bij oplevering welk register je gebruikt hebt. Noem een neutrale inleiding niet "in zijn stijl", dat is een belofte die de tekst niet waarmaakt.
+- Vraagt hij wat zijn stijl is, antwoord dan met het patroon hierboven plus de periode en het register, met citaten uit `references/schrijfbewijs-alle-jaren.md`, niet met een lijst verboden woorden.
+- Zijn stem komt het sterkst terug in labjournals, theorievragen, reflecties en logboeken, want daar mag hij zelf uitleggen en hardop redeneren.
+
 Bij lange teksten:
 - duidelijkheid boven extreme beknoptheid
 - context toegestaan
 - langere uitleg toegestaan
 - leesflow belangrijker dan inkorten
+
+Geldt niet bij het herschrijven van een document dat hij zelf al heeft: dan breid je niet uit. Houd de lengte gelijk of korter. Een langere versie met meer uitleg leest vlakker en dan kiest hij zijn eigen bestand en gooit hij de jouwe weg.
+
+---
+
+## Mail, CV en logboek: de registers naast het verslag
+
+De hoofdstukken hierboven komen uit zijn schoolwerk. Voor mail, CV en logboek geldt een ander register, met bewijs uit zijn verzonden Outlook-items en zijn OneDrive. Volledige uitwerking met voorbeelden en de keuzetabel: `references/mail-cv-logboek.md`.
+
+De regels die je altijd moet toepassen:
+
+- **Aanhef in zakelijke mail NL is `Beste`**, niet Hi. `Beste [bedrijfsnaam],` als hij de persoon niet kent, `Beste [voornaam],` zodra de naam bekend is, `Dag [voornaam],` bij een persoonlijke dienstverlener. `Geachte` nooit.
+- **Geen witregels tussen de alinea's.** Zijn zakelijke mail is één blok. Dat geldt niet voor chat, dat is al geregeld in het kopje kanaal en lengte.
+- **Afsluiting direct achter de laatste zin, met volledige naam bij zakelijk:** `Alvast bedankt,Roan Heemstra`. Bij collega's korter, `Groet, Roan`.
+- **Verzoeken beginnen met `Ik zou graag...`**, dat is zijn vaste vorm.
+- **Slecht nieuws opent met `Helaas`**, een fout of rommelig verloop met een korte `Excuses voor...`, zonder excuus-alinea.
+- **Tegen een organisatie schrijf je `jullie`**, niet u of de organisatie in de derde persoon.
+- **Onderwerpregel kort, eerste woord met hoofdletter, geen `Betreft:`**; bij een antwoord laat je `Re:` en het onderwerp van de tegenpartij staan.
+- **Een reply houdt de hele thread eronder** met `From:`, `Sent:`, `To:` en `Subject:`. Dat is zijn archief, niet weghalen tenzij hij het vraagt.
+- **Engels: `Dear` mag bij koude mail, met `Sincerely`**, en in supportthreads `Hi [voornaam],` met `Thank you.` Eronder `Roan` of `Roan Heemstra`, geen handtekeningblok.
+- **CV en profiel: eerste persoon, korte feitelijke zinnen**, geen wervende marketingtaal toevoegen die er niet in stond. In datums en adressen mag een streepje (`Sept 2022 - Heden`); de streepjesregel geldt voor lopende tekst.
+- **Logboek en dagnotitie: telegramstijl.** Losse regels zonder punt, kleine letters, afkortingen die hij zelf gebruikt (ff, ivm, v/). Nooit bulletlijsten met hoofdletters en punten.
+
+Bepaal eerst welk register de vraag raakt, mail, CV, logboek of verslag, en zeg bij oplevering welk register je gebruikt hebt.
 
 ---
 
@@ -688,3 +761,16 @@ Vervangen door het gewone werkwoord: telt wordt heeft, beschikt over wordt heeft
 6. Varieer binnen zijn gewone taal. Een natuurlijke Nederlandse drieslag mag blijven staan. Maak er geen stijve constructie van met een aanwijzend voornaamwoord vooraan ("Deze remt de groei", "Die zorgt ervoor dat"). Dat klinkt als een schoolboek en dan is de variatie erger dan het patroon.
 
 Detectors zijn onbetrouwbaar, menselijke herkenning zit rond kansniveau. Het doel is niet een detector passeren, maar dat de tekst als Roan leest.
+
+### Controle achteraf: `scripts/stijlcheck.py`
+
+Na het schrijven tel je de resten met het script in deze skill in plaats van op je geheugen:
+
+```bash
+python3 scripts/stijlcheck.py verslag.docx --register derde
+python3 scripts/stijlcheck.py mail.md --max-zin 20
+```
+
+Het script telt de streepjes als leesteken, het teken &, zowel ... als, de vage, deftige, schoolboek- en AI-woorden, de openende zinnen als "In dit verslag", de zinnen boven de maximumlengte en het register (ik, wij, je). Exitcode 1 betekent: eerst herschrijven. Gebruik `--register derde` voor een neutrale inleiding of samenvatting, `ik` voor een individueel verslag.
+
+Wat het script niet ziet: of de inhoud klopt en of een zin ergens op slaat. Dat blijft leeswerk.

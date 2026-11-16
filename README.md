@@ -22,7 +22,9 @@ That is exactly what this repo contains.
 - Forces cause-and-effect sentences instead of empty descriptions
 - Removes em-dashes entirely (use a colon, a comma, or two sentences instead)
 - Keeps paragraphs short, usually 1 to 3 sentences
-- Uses the correct sign-off format per language
+- Uses the correct sign-off format per language, with the greeting and sign-off I actually send
+- Keeps three registers apart: a report, a business mail, and a work log are not the same voice
+- Counts the leftovers afterwards with `scripts/stijlcheck.py` instead of trusting memory
 
 ## Language support
 
@@ -32,6 +34,15 @@ The skill contains two full reference sections:
 - **Nederlands** for the same in Dutch
 
 The AI selects the correct section based on the language you ask for.
+
+Inside those two sections it picks a register, because I do not write the same way everywhere:
+
+- Report or school document: neutral, structured, cause and effect
+- Business mail: one block, `Beste` as the greeting, full name at the end
+- CV or profile: first person, short factual lines, no marketing words
+- Work log: telegram style, no full stops, the abbreviations I use myself
+
+The last three come from my own sent mail, my CV and my work log, and they sit in `references/mail-cv-logboek.md`.
 
 ## How to use
 
@@ -52,6 +63,7 @@ skills:
 ## Known issues
 
 - Dual-language support works but needs explicit language selection from the user
+- The register picker lives in prose, not in code, so an ambiguous prompt can still land in the wrong voice
 - The AI sometimes still drifts into generic phrasing on very open-ended prompts
 - Fine-tuning continues as I spot more patterns in my own writing
 
